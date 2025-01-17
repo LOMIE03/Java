@@ -5,6 +5,7 @@ public class Main {
         int lengthBottom = 10;
         int height = 7;
         double area = (double)( legthTop + lengthBottom) * height / 2;
+//    = double area = (legthTop + lengthBottom) * height / 2.0;
         System.out.println(area);
     }
 }
