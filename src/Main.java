@@ -11,34 +11,30 @@ public class Main {
             System.out.println("-------------------------------------");
             System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
             System.out.println("-------------------------------------");
-            int num1 = scanner.nextInt();
-            System.out.println("선택> " + num1);
-            if(num1 > 4){
-                System.out.println("보기에 있는 숫자를 눌러주세요");
-                continue;
-            }
-            if(num1 == )
+            System.out.println("선택> ");
 
-            if(num1 == 1) {
-                System.out.println("예금액 > 10000");
-                continue;
-            }
-            if(num1 == 2){
-                System.out.println("출금액 > 2000");
-//                continue;
-            }
-            if(num1 == 3){
-                System.out.println("잔고 > 8000");
-//                continue;
-            }
-            if(num1 == 4){
+            int menuNum = Integer.parseInt(scanner.nextLine());
 
-                break;
+            switch (menuNum){
+                case 1:
+                    System.out.print("예금액> ");
+                    balance += Integer.parseInt(scanner.nextLine());
+                    break;
+                case 2:
+                    System.out.print("출금액> ");
+                    balance -= Integer.parseInt(scanner.nextLine());
+                    break;
+                case 3:
+                    System.out.print("잔고> ");
+                    System.out.println(balance);
+                    break;
+                case 4:
+                    run = false;
+                    break;
             }
+                    System.out.println();
 
-
-
-        }
+            }
         System.out.println("프로그램 종료");
     }
 }
